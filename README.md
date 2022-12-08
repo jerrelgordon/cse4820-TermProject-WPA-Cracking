@@ -1,22 +1,21 @@
 # CSE4820 Fall 2022 Project: WPA/WPA2 Cracking Automation
 
 ## INTRODUCTION
-For our term project, we decided to automate WPA/WPA2 Wi-Fi password
+For my term project, I decided to automate WPA/WPA2 Wi-Fi password
 cracking via use of the Aircrack-ng Suite (i.e., airmon-ng, airodump-ng aireplayng and aircrack-ng.) This was achieved by writing three python scripts which
 were then called in a C++ program in order to produce an easy to use executable
-file. The idea behind our project is to allow an ethical hacker to take advantage
+file. The idea behind the project is to allow an ethical hacker to take advantage
 of the Aircrack-ng suite without needing to know or remember how exactly to
 use each tool in the suite. It will prompt the user for a wireless interface, and
 then prompt them again to enter the BSSID of the target network as well as a
 client connected to the network.
 
 ## LIMITATIONS OF THE TOOL
-Our tool suffers from two main limitations. Firstly, the tool currently only
+The tool suffers from two main limitations. Firstly, the tool currently only
 targets WPA/WPA2 networks. It is currently not capable of targeting WEP
 or WPS networks, however future modifications can allow for this. This is
-as a result of challenges that we incurred while working on the WPA/WPA2
-attack. With the time constraints to consider, we decided that it would be best
-if we focused on getting the WPA/WPA2 to work as best as possible instead of
+as a result of challenges that was incurred while working on the WPA/WPA2
+attack. With the time constraints to consider, I decided that it would be best to focus on getting the WPA/WPA2 to work as best as possible instead of
 trying to extend the functionality of the tool and letting the entire tool suffer
 as a result. Secondly, the tool is currently not fully automated since it does
 ask the user to enter the BSSID of the target network and a client connected
@@ -26,7 +25,7 @@ bridge this knowledge gap with concise instructions. Despite this, the tool does
 eliminate the needs to research the manual page for the various tools in the
 Aircrack suite. It also eliminates the need for the user to understand what a
 WPA four way handshake is, why it needs to be captured, and how to go about
-capturing it. In addition to the two main limitations, our tool also lacks a
+capturing it. In addition to the two main limitations, the tool also lacks a
 graphical interface, which some users may find more appealing and easy to use.
 
 ## TOOL COMPONENTS
